@@ -1,0 +1,184 @@
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+.header, .section01 {
+  color: hsl(243, 87%, 12%);
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav__ul {
+  display: flex;
+  align-items: center;
+}
+.header .nav__ul .nav__li {
+  list-style: none;
+}
+.header .nav__ul .nav__li .nav__a {
+  display: block;
+  color: inherit;
+}
+
+.section02__wave {
+  position: relative;
+  top: 0.3rem;
+}
+.section02__wave img {
+  width: 100%;
+}
+
+.section02__div {
+  color: hsl(243, 87%, 12%);
+  background-color: hsl(240, 75%, 98%);
+}
+.section02__div .btn {
+  position: relative;
+  border: 0;
+  background-color: inherit;
+}
+.section02__div .btn a {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding-bottom: 1px;
+  border-bottom: solid 1px hsl(170, 45%, 43%);
+  color: hsl(170, 45%, 43%);
+}
+.section02__div .btn a:hover, .section02__div .btn a :focus {
+  opacity: 0.7;
+}
+.section02__div .quote {
+  max-width: 25em;
+  display: grid;
+  gap: 0.8rem;
+  padding: 2rem;
+  font-size: 0.86rem;
+  background-color: white;
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.2);
+}
+.section02__div .quote .quote__author-div {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1.2fr 8.8fr;
+  gap: 0.5rem;
+}
+.section02__div .quote .quote__author-div #avatar-img {
+  border: 0;
+  border-radius: 50%;
+}
+.section02__div .quote .quote__author-div .quote__author-span {
+  display: grid;
+  row-gap: 0.2rem;
+  font-size: 0.7rem;
+}
+
+.section03 {
+  color: white;
+  background-color: hsl(238, 22%, 44%);
+}
+
+input[type=text] {
+  padding: 0.66rem 1rem;
+  font-size: 1rem;
+  border: solid 1px #000;
+  border-radius: 3px;
+  outline: none;
+}
+input[type=text]::placeholder {
+  color: rgba(7, 4, 57, 0.3);
+}
+
+input[type=submit] {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background-color: hsl(224, 93%, 58%);
+}
+input[type=submit]:hover, input[type=submit]:focus {
+  cursor: pointer;
+  background-color: rgba(48, 101, 248, 0.7);
+}
+
+.footer {
+  color: white;
+  background-color: hsl(243, 87%, 12%);
+}
+.footer .contact-div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer .info-div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8rem;
+}
+.footer .info-div a {
+  width: fit-content;
+  color: white;
+}
+.footer .hover-div a:hover {
+  cursor: pointer;
+  color: hsl(224, 93%, 58%);
+  border-color: hsl(224, 93%, 58%);
+}
+.footer .media-div {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.footer .media-div .fa {
+  width: 1.75rem;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-content: center;
+  border: solid 1px white;
+  border-radius: 50%;
+  color: white;
+}
+.footer .footer__logo {
+  fill: white;
+}
+
+/*# sourceMappingURL=style.css.map */
